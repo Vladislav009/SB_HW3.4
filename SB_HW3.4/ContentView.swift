@@ -8,9 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var targetValue = Int.random(in: 0...100)
+    @State private var currentValue = Double.random(in: 0...100)
+    
+    @State private var showScore = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Подвиньте слайдер как можно ближе к: \(targetValue)")
+                .padding()
+            
+            HStack{
+                Text("0")
+                
+                SliderViewKit(currentValue: $currentValue, opacity: computeScore())
+                
+                Text("100")
+            }
+            
+            ButtonActionView(text: "Проверь меня", action: showScoreModal)
+                .alert("Ваш результат: \(computeScore())", isPresented: $showScore) {
+                    Button("OK", role: .cancel) { }
+                }
+            
+            ButtonActionView(text: "Начать заново", action: resetGame)
+        }
+    }
+    
+}
+
+extension ContentView {
+    private func computeScore() -> Int {
+        let difference = abs(targetValue - lround(currentValue))
+        return 100 - difference
+    }
+    
+    private func showScoreModal() {
+        showScore = true
+    }
+    
+    private func resetGame() {
+        targetValue = Int.random(in: 0...100)
     }
 }
 

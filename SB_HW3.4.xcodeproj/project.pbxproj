@@ -11,6 +11,8 @@
 		062E865727A82877003AB0E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E865627A82877003AB0E5 /* ContentView.swift */; };
 		062E865927A82878003AB0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062E865827A82878003AB0E5 /* Assets.xcassets */; };
 		062E865C27A82878003AB0E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062E865B27A82878003AB0E5 /* Preview Assets.xcassets */; };
+		062E866327A829ED003AB0E5 /* SliderViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E866227A829ED003AB0E5 /* SliderViewKit.swift */; };
+		062E866527A9018E003AB0E5 /* ButtonActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E866427A9018E003AB0E5 /* ButtonActionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		062E865627A82877003AB0E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		062E865827A82878003AB0E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062E865B27A82878003AB0E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		062E866227A829ED003AB0E5 /* SliderViewKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewKit.swift; sourceTree = "<group>"; };
+		062E866427A9018E003AB0E5 /* ButtonActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonActionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				062E865627A82877003AB0E5 /* ContentView.swift */,
 				062E865827A82878003AB0E5 /* Assets.xcassets */,
 				062E865A27A82878003AB0E5 /* Preview Content */,
+				062E866227A829ED003AB0E5 /* SliderViewKit.swift */,
+				062E866427A9018E003AB0E5 /* ButtonActionView.swift */,
 			);
 			path = SB_HW3.4;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			files = (
 				062E865727A82877003AB0E5 /* ContentView.swift in Sources */,
 				062E865527A82877003AB0E5 /* SB_HW3_4App.swift in Sources */,
+				062E866527A9018E003AB0E5 /* ButtonActionView.swift in Sources */,
+				062E866327A829ED003AB0E5 /* SliderViewKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
